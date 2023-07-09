@@ -1,25 +1,73 @@
-body{
-    display:flex;
-    align-items: center;
-    justify-content: center;  
+body {
+    display: flex;
     flex-direction: column;
-    overflow-y: hidden;
-  }
-  
-  .navbar{
-      width: 100%;
-      position: sticky;
-      top: 0;
-  }
-  
-  #display{ 
-      text-align: center;
-      margin-top: 20rem;
-  }
-  
-  footer{
-      background: black;
-      color:white;
-      padding: 10rem;
-      margin-top:auto;
-  }
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: lightgray;
+    padding: 1rem;
+    z-index: 100;
+    width: 100%;
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+#display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 1rem;
+    margin-top: auto;
+    width: 100%;
+}
+
+.card {
+    width: 18rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-description {
+    display: none;
+}
+
+.card-price {
+    display: none;
+}
+
+.show-description .card-description,
+.show-price .card-price {
+    display: block;
+}
