@@ -1,0 +1,25 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+  
+  .navbar{
+      width: 100%;
+      position: sticky;
+      top: 0;
+  }
+  
+  #display{ 
+      text-align: center;
+      margin-top: 20rem;
+  }
+  
+  footer{
+      background: black;
+      color:white;
+      padding: 10rem;
+      margin-top:auto;
+  }
